@@ -1,0 +1,88 @@
+-Run Info---------------
+Version         : 1.5
+Runname         : LSPB AL2
+
+
+Input ->
+    Casanovo ->
+        Path     : ../data/align_output/aligned_files/QEX3_1170178_scansum_AL2_Chymotrypsin_aligned.mztab
+        Name     : Chymotrypsin
+        CutoffScore: 0.5
+        FilterPPM: 5
+    <-
+
+    Casanovo ->
+        Path     : ../data/align_output/aligned_files/QEX3_1170180_scansum_AL2_Trypsin_aligned.mztab
+        Name     : Trypsin
+        CutoffScore: 0.5
+        FilterPPM: 5
+    <-
+
+    Casanovo ->
+        Path     : ../data/align_output/aligned_files/QEX2_1181293_scansum_AL2_Chymotrypsin_18h_aligned.mztab
+        Name     : Chymotrypsin-18h
+        CutoffScore: 0.5
+        FilterPPM: 5
+    <-
+
+    Casanovo ->
+        Path     : ../data/align_output/aligned_files/QEX2_1181294_scansum_AL2_Chymotrypsin_3h_aligned.mztab
+        Name     : Chymotrypsin-3h
+        CutoffScore: 0.5
+        FilterPPM: 5
+    <-
+
+    Casanovo ->
+        Path     : ../data/align_output/aligned_files/QEX2_1185163_scansum_AL2_Elastase_aligned.mztab
+        Name     : Elastase
+        CutoffScore: 0.5
+        FilterPPM: 5
+    <-
+
+<-
+
+TemplateMatching ->
+    EnforceUnique      : True
+    CutoffScore        : 10
+    AmbiguityThreshold : 0.9
+
+    include!(../alphabets/mass_alphabet.txt)
+
+    Segments->
+        include!(../templates/Homo_sapiens_Light_Chain.txt)
+        include!(../templates/common_contaminants.txt)
+    <-
+<-
+
+Recombine->
+    N          : 1
+    Decoy      : True
+    CutoffScore: 10
+
+    Order->
+        Homo sapiens Light Chain: IGLV IGLJ IGLC
+    <-
+<-
+
+Report ->
+    Folder: ../results/{datetime} {name}/
+    HTML ->
+        Path: report-monoclonal.html
+    <-
+    FASTA ->
+        Path: report-monoclonal-tm.fasta
+        OutputType: TemplateMatching
+    <-
+    CSV ->
+        Path: report-monoclonal-tm.csv
+        OutputType: TemplateMatching
+    <-
+    FASTA ->
+        Path: report-monoclonal-rec.fasta
+        OutputType: Recombine
+    <-
+    CSV ->
+        Path: report-monoclonal-rec.csv
+        OutputType: Recombine
+    <-
+<-
