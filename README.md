@@ -2,7 +2,13 @@
 
 ## How to run the alignment script
 
-This will output the aligned files and the figures to .\data\casanovo_results\aligned_files and .\data\casanovo_results\figures respectively.
+First install the Python dependencies (Python 3.9+):
+
+```bash
+pip install -r requirements.txt
+```
+
+This will output the aligned files and the figures to .\data\align_output\aligned_files and .\data\align_output\figures respectively.
 
 ```bash
 python .\data\align_results.py .\data\casanovo_results .\data\align_output --percentile 0.90 --min_ppm_error -20 --max_ppm_error 20 --keep_n_peptides 1 
