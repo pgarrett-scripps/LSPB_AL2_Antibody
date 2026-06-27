@@ -1,0 +1,33 @@
+# This file lets GitHub show a "Cite this repository" button and lets Zenodo
+# pre-fill your DOI deposit. Replace every REPLACE-ME before publishing.
+#
+# TODO before release:
+#   1. Fill in the full author list, in order (add/remove entries as needed).
+#   2. Add ORCIDs if you have them (uncomment the orcid lines).
+#   3. After Zenodo mints the DOI, set `doi:` below (the version-independent
+#      "concept" DOI is usually the best one to cite).
+#   4. Optional: fill in the `preferred-citation` block to point "Cite this
+#      repository" at the journal article instead of the software.
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it using the metadata below."
+title: "LSPB AL2 Antibody Stitching Analysis"
+authors:
+  - family-names: "REPLACE-ME"
+    given-names: "REPLACE-ME"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  # - family-names: "REPLACE-ME"
+  #   given-names: "REPLACE-ME"
+version: "1.0.0"
+date-released: "2026-06-27"
+url: "https://github.com/pgarrett-scripps/LSPB_AL2_Antibody"
+# doi: "10.5281/zenodo.XXXXXXX"   # add the Zenodo DOI once minted
+#
+# preferred-citation:
+#   type: article
+#   title: "REPLACE-ME — paper title"
+#   authors:
+#     - family-names: "REPLACE-ME"
+#       given-names: "REPLACE-ME"
+#   journal: "REPLACE-ME"
+#   year: 2026
+#   doi: "REPLACE-ME"
