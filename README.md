@@ -1,5 +1,7 @@
 # AL2 Antibody Stitching Analysis
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21042679.svg)](https://doi.org/10.5281/zenodo.21042679)
+
 ## How to run the alignment script
 
 First install the Python dependencies (Python 3.9+):
