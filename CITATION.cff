@@ -28,7 +28,9 @@ authors:
 version: "1.0.0"
 date-released: "2026-06-27"
 url: "https://github.com/pgarrett-scripps/LSPB_AL2_Antibody"
-doi: "10.5281/zenodo.21042679"
+# Concept DOI — always resolves to the latest version (recommended for citation).
+# The v1.0.0 version-specific DOI is 10.5281/zenodo.21042679.
+doi: "10.5281/zenodo.21042678"
 #
 # preferred-citation:
 #   type: article

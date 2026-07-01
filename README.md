@@ -1,6 +1,6 @@
 # AL2 Antibody Stitching Analysis
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21042679.svg)](https://doi.org/10.5281/zenodo.21042679)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21042678.svg)](https://doi.org/10.5281/zenodo.21042678)
 
 ## How to run the alignment script
 
