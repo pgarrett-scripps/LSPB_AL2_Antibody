@@ -1,20 +1,30 @@
-# This file lets GitHub show a "Cite this repository" button and lets Zenodo
-# pre-fill your DOI deposit. Replace every REPLACE-ME before publishing.
+# This file powers GitHub's "Cite this repository" button and lets Zenodo
+# pre-fill DOI deposits. Keep the author list consistent with the Zenodo record.
 #
-# TODO before release:
-#   1. Fill in the full author list, in order (add/remove entries as needed).
-#   2. Add ORCIDs if you have them (uncomment the orcid lines).
-#   3. Optional: fill in the `preferred-citation` block to point "Cite this
-#      repository" at the journal article instead of the software.
+# Optional next steps:
+#   - Add ORCIDs per author (add an `orcid: "https://orcid.org/..."` line).
+#   - Fill in the `preferred-citation` block below to point "Cite this
+#     repository" at the journal article instead of the software archive.
 cff-version: 1.2.0
 message: "If you use this software or data, please cite it using the metadata below."
 title: "LSPB AL2 Antibody Stitching Analysis"
 authors:
-  - family-names: "REPLACE-ME"
-    given-names: "REPLACE-ME"
-    # orcid: "https://orcid.org/0000-0000-0000-0000"
-  # - family-names: "REPLACE-ME"
-  #   given-names: "REPLACE-ME"
+  - family-names: "Bassett"
+    given-names: "Parker"
+  - family-names: "Nguyen"
+    given-names: "Binh A."
+  - family-names: "Singh"
+    given-names: "Virender"
+  - family-names: "Garrett"
+    given-names: "Patrick T."
+  - family-names: "Moresco"
+    given-names: "James J."
+  - family-names: "Afrin"
+    given-names: "Shumaila"
+  - family-names: "Pękała"
+    given-names: "Maja"
+  - family-names: "Saelices"
+    given-names: "Lorena"
 version: "1.0.0"
 date-released: "2026-06-27"
 url: "https://github.com/pgarrett-scripps/LSPB_AL2_Antibody"
